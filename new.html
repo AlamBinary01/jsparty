@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Party Hire</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-pQU8Z6kpAbxQ6+oXQDdylLkzZoQaML6Yx7A60WyAHm3mO1OARkfaKc1sEYYTms+/pA5rD3tn81cMO61Q9v84Mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+
+    <!-- Yellow Top Bar -->
+    <div class="top-yellow-bar fixed-top"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="top: 40px; background-color: #1e223a;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="JS Logo" width="70" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <!-- Delivery Areas Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="deliveryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Delivery Areas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="deliveryDropdown">
+                            <li><a class="dropdown-item" href="#" style="color: white;">Bouncy Castle Hire East
+                                    London</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: white;">Bouncy Castle Hire East
+                                    London</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: white;">Bouncy Castle Hire East
+                                    London</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: white;">Bouncy Castle Hire East
+                                    London</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: white;">Bouncy Castle Hire East
+                                    London</a></li>
+                        </ul>
+                    </li>
+                    <!-- Products Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Bouncy Castles</a></li>
+                            <li><a class="dropdown-item" href="#">Slides</a></li>
+                            <li><a class="dropdown-item" href="#">Soft Play</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Testimonials -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Our Story</a></li>
+                            <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Carousel -->
+    <div id="heroSlider" class="carousel slide mt-5 pt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/image.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image3.png" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="contact-floating">
+        <div class="bg-dark text-center text-white p-4 rounded-3 shadow-lg contact-overlay">
+            <h3 style="font-size: 24px; font-weight: bold;">Book Online OR Contact Us</h3>
+            <h5 class="fw-bold text-warning mb-3 phone-numbers">
+                0960 131 191 <span class="text-white mx-2">|</span> 020 8505 8115
+            </h5>
+            <h3 style="font-size: 20px; font-weight: bold;">info@localbouncycastle.com</h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="d-inline-flex align-items-center px-3 py-2 rounded-pill shadow-sm weather-button" id="weather">
+        <img src="./images/weatherIcon.png" alt="Weather Icon" width="62" height="62" class="me-2">
+        <span class="fw-bold text-outline text-warning">Check Weather</span>
+    </div>
+    <div class="whatsapp-button d-inline-flex align-items-center px-3 py-2 rounded-pill shadow-sm">
+        <img src="./images/whatsapp.png" alt="WhatsApp Icon" width="52" height="52" class="me-2">
+    </div>
+    <div class="container mt-5 mb-4">
+        <form class="d-flex border rounded-3 p-2 align-items-center" style="max-width: 100%;">
+            <span class="me-3 ms-2 text-muted">
+                <i class="bi bi-search" style="font-size: 1.2rem;"></i>
+            </span>
+            <input class="form-control border-0" type="search" placeholder="Search Products Here" aria-label="Search" />
+        </form>
+    </div>
+
+    <!-- CATEGORY SECTION -->
+    <div class="container my-5 p-4 rounded-4" style="background-color: #fde078;">
+        <h2 class="text-center fw-bold text-dark mb-4" style="font-family: 'Arial Black';">ALL CATEGORY</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Single Card -->
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duplicate this block for more categories -->
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="card p-2 shadow-sm border-0 rounded-4" style="background-color: white;">
+                    <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
+                    <div class="card-body text-center p-2">
+                        <button class="btn fw-bold text-white"
+                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            BOUNCY CASTLE HIRE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container my-5">
+    <form class="d-flex flex-column flex-md-row border-0 shadow-sm"
+        style="max-width: fit-content; margin: auto; border-radius: 12px; overflow: hidden;">
+        
+        <!-- Header Section -->
+        <div class="d-flex align-items-center bg-light text-secondary fw-medium px-4 py-3 mb-2 mb-md-0">
+            <i class="bi bi-arrow-up-right text-primary me-2 fs-5"></i>
+            <span class="fs-6">Check Availability&nbsp;&nbsp;of Products</span>
+        </div>
+
+        <!-- Date Input -->
+        <div class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
+            <div class="input-group" style="min-width: 220px;">
+                <span class="input-group-text bg-transparent border-0 pe-1">
+                    <i class="bi bi-calendar3 text-secondary"></i>
+                </span>
+                <input type="text" class="form-control border-0 px-1 shadow-none fw-medium"
+                    placeholder="Select Booking Date" style="font-size: 0.9rem;">
+            </div>
+        </div>
+
+        <!-- Time Slot Selector -->
+        <div class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
+            <div class="input-group" style="min-width: 200px;">
+                <span class="input-group-text bg-transparent border-0 pe-1">
+                    <i class="bi bi-clock text-secondary"></i>
+                </span>
+                <select class="form-select border-0 px-1 shadow-none fw-medium" style="font-size: 0.9rem;">
+                    <option>Select Time Slot</option>
+                    <option>Morning (9AM-12PM)</option>
+                    <option>Afternoon (1PM-5PM)</option>
+                    <option>Evening (6PM-9PM)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Search Button -->
+       <div class="border-top border-md-start border-light d-flex justify-content-center justify-content-md-start align-items-center px-4 py-2 text-white rounded-bottom rounded-md-0 mb-2 mb-md-0"
+    style="background-color: #0b1c59;">
+    
+    <button type="submit"
+        class="btn text-white fw-bold d-flex align-items-center px-3 py-2 border-0 bg-transparent"
+        style="letter-spacing: 0.5px;">
+        <i class="bi bi-search me-2 fs-6"></i>
+        SEARCH
+    </button>
+</div>
+
+    </form>
+</div>
+
+    <div class="container my-5">
+        <div class="row g-4 align-items-start">
+
+            <!-- LEFT: Coronavirus Update -->
+            <div class="col-lg-8">
+                <h2 class="corona-title">Coronavirus (COVID-19) Update</h2>
+                <h4 class="corona-subtitle mt-3">At JS Party Hire, we take safety very seriously. Actually, it is the
+                    most important thing!</h4>
+                <p class="mt-4">
+                    Due to the awake of the Coronavirus (COVID-19), we have taken further measures to clean the castles
+                    and equipment with soap and antibacterial products (we do this on a normal day too!)
+                </p>
+                <p>
+                    Since the Government's announcement of social distancing, we are no longer promoting parties or the
+                    like in the coming weeks. However, we will still help our valued customers keep their children
+                    entertained during this very stressful time.
+                    Having a bouncy castle for the children of only your home can get them busy for hours during the
+                    day, helping them release their energy and stay healthy.
+                </p>
+                <p>
+                    JS Party Hire will deliver the Bouncy Castle in the safest possible method. Our Delivery driver will
+                    be wearing protective gear and after cleaning the castle thoroughly, we will set it up in your
+                    garden.
+                    We will ask all family members, especially the elderly and children, to go upstairs while the setup
+                    is taking place.
+                </p>
+                <p>
+                    If you have any concerns or would like to discuss the arrangements then please give us a call on <a
+                        href="tel:02085058115">020 8505 8115</a>.
+                    <br />
+                    Can we please direct you to the guidance of the <a href="https://www.nhs.uk">NHS services</a>.
+                </p>
+                <p><strong>JS Party Hire</strong></p>
+            </div>
+        </div>
+
+        <div class="container my-5 text-center">
+            <h2 class="fw-bold text-primary mb-5">Testimonials</h2>
+            <div class="d-flex justify-content-center align-items-start flex-wrap gap-4">
+
+                <!-- Testimonial 1 -->
+                <div class="d-flex align-items-start gap-3">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" class="testimonial-img">
+                    <div class="testimonial-box text-start">
+                        <div class="testimonial-name">Rk From East London</div>
+                        <p class="mb-0 mt-2">hello!<br>We improve our products, based on feedback, until they're the
+                            best.</p>
+                    </div>
+                </div>
+                <div class="divider d-none d-md-block"></div>
+                <div class="d-flex align-items-start gap-3">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User 2" class="testimonial-img">
+                    <div class="testimonial-box text-start">
+                        <div class="testimonial-name">Rk From East London</div>
+                        <p class="mb-0 mt-2">hello!<br>We improve our products, based on feedback, until they're the
+                            best.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 border rounded px-2 py-4 shadow-sm">
+            <div class="row align-items-center justify-content-center g-3 flex-wrap">
+
+                <!-- Title -->
+                <div class="col-auto">
+                    <h4 class="fw-bold m-0" style="color: #2f57ff;">Sign Up</h4>
+                </div>
+
+                <!-- Input -->
+                <div class="col-md-5 col-sm-8 col-12">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <!-- Button -->
+                <div class="col-auto">
+                    <button class="btn btn-subscribe px-4" type="button">Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer container-fluid text-white px-4 px-md-5 pt-5 pb-4">
+        <!-- Top-right logo -->
+        <img src="./images/footer-logo.png" alt="Bouncy Castle Network Logo" class="network-logo">
+
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="./images/logo.png" alt="Logo" class="me-2" style="width: 50px; height: 50px">
+                    <span class="logo-text">JsPartyHire</span>
+                </div>
+                <p>
+                    Bouncy Castle Hire East London<br>
+                    Bouncy Castle Hire North London<br>
+                    Bouncy Castle Hire South London
+                </p>
+                <p><strong>Phone number</strong><br>0960 131 191</p>
+                <p><strong>Email</strong><br>
+                    <a href="mailto:info@localbouncycastle.com">info@localbouncycastle.com</a>
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <h5 class="fw-bold">Quick links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Social -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <h5 class="fw-bold">Social</h5>
+                <div class="social-icons d-flex flex-column gap-2">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/281/281764.png" alt="Google"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <h5 class="fw-bold">Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookies policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <div class="reserved text-white pt-3">
+            All Rights Reserved 2025
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

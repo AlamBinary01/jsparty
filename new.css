@@ -1,0 +1,257 @@
+/* Yellow top bar */
+.top-yellow-bar {
+  background-color: #ffd800;
+  height: 40px;
+  width: 100%;
+}
+
+/* Navbar style */
+.navbar {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #1c1f3f !important;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd800;
+}
+
+.dropdown-menu {
+  background-color: #0b1c59;
+  color: white;
+
+}
+
+.dropdown-item {
+  color: white;
+  background-color: #0b1c59;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #0b1c59;
+}
+
+
+
+/* Slider Image */
+.carousel-item img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-overlay {
+  background-color: #1c1f3f;
+  opacity: 0.87;
+  top: 80px;
+}
+
+.contact-banner {
+  max-width: 430px;
+  width: 100%;
+}
+
+.phone-numbers {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.contact-floating {
+  position: absolute;
+  top: 480px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-box {
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #0b1c59;
+  font-size: 1.25rem;
+}
+
+.divider {
+  width: 3px;
+  background-color: #2f57ff;
+  border-radius: 10px;
+  height: 250px;
+  margin: auto 40px;
+}
+
+.btn-subscribe {
+  background-color: #0b1c59;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-subscribe:hover {
+  background-color: #091644;
+}
+
+.footer {
+  background-color: #0a0e2a;
+  color: white;
+  position: relative;
+  padding-top: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reserved {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+.corona-title {
+  color: #2f57ff;
+  font-weight: bold;
+}
+
+
+
+
+/* Desktop Top-right Rotated Logo */
+.network-logo {
+  position: absolute;
+  bottom: 280px;
+  right: 0;
+  width: 180px;
+  margin: 20px;
+  z-index: 0;
+  transform: rotate(30deg);
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Hide rotated logo on mobile */
+@media (max-width: 991.98px) {
+  .network-logo {
+    display: none;
+  }
+}
+
+/* Social icons hover effect */
+.social-icons a img {
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .network-logo {
+    position: absolute;
+    top: 600px;
+    right: 0;
+    width: 180px;
+    margin: 20px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  top: 70%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+.text-outline {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 18px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .phone-numbers {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .contact-floating {
+    top: 220px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-overlay {
+    padding: 1rem;
+  }
+
+  .whatsapp-button {
+    position: fixed;
+    top: 60%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 9999;
+  }
+
+
+
+}
