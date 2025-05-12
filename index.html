@@ -10,15 +10,18 @@
         integrity="sha512-pQU8Z6kpAbxQ6+oXQDdylLkzZoQaML6Yx7A60WyAHm3mO1OARkfaKc1sEYYTms+/pA5rD3tn81cMO61Q9v84Mw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="new.css">
 </head>
 
 <body>
-
     <!-- Yellow Top Bar -->
     <div class="top-yellow-bar fixed-top"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="top: 40px; background-color: #1e223a;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="top: 40px; background-color: #0B1C59;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="JS Logo" width="70" />
@@ -143,7 +146,7 @@
                     <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
                     <div class="card-body text-center p-2">
                         <button class="btn fw-bold text-white"
-                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            style="background-color:#0B1C59; width: 100%; border-radius: 10px; font-size: 14px;">
                             BOUNCY CASTLE HIRE
                         </button>
                     </div>
@@ -167,7 +170,7 @@
                     <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
                     <div class="card-body text-center p-2">
                         <button class="btn fw-bold text-white"
-                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            style="background-color:#0B1C59; width: 100%; border-radius: 10px; font-size: 14px;">
                             BOUNCY CASTLE HIRE
                         </button>
                     </div>
@@ -178,7 +181,7 @@
                     <img src="./images/catergory.png" class="card-img-top rounded-3" alt="Bouncy Castle">
                     <div class="card-body text-center p-2">
                         <button class="btn fw-bold text-white"
-                            style="background-color:#0b1c59; width: 100%; border-radius: 10px; font-size: 14px;">
+                            style="background-color:#0B1C59; width: 100%; border-radius: 10px; font-size: 14px;">
                             BOUNCY CASTLE HIRE
                         </button>
                     </div>
@@ -233,136 +236,131 @@
         </div>
     </div>
     <div class="container my-5">
-    <form class="d-flex flex-column flex-md-row border-0 shadow-sm"
-        style="max-width: fit-content; margin: auto; border-radius: 12px; overflow: hidden;">
-        
-        <!-- Header Section -->
-        <div class="d-flex align-items-center bg-light text-secondary fw-medium px-4 py-3 mb-2 mb-md-0">
-            <i class="bi bi-arrow-up-right text-primary me-2 fs-5"></i>
-            <span class="fs-6">Check Availability&nbsp;&nbsp;of Products</span>
-        </div>
+        <form class="d-flex flex-column flex-md-row border-0 shadow-sm"
+            style="max-width: fit-content; margin: auto; border-radius: 12px; overflow: hidden;">
 
-        <!-- Date Input -->
-        <div class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
-            <div class="input-group" style="min-width: 220px;">
-                <span class="input-group-text bg-transparent border-0 pe-1">
-                    <i class="bi bi-calendar3 text-secondary"></i>
-                </span>
-                <input type="text" class="form-control border-0 px-1 shadow-none fw-medium"
-                    placeholder="Select Booking Date" style="font-size: 0.9rem;">
+            <!-- Header Section -->
+            <div class="d-flex align-items-center bg-light text-secondary fw-medium px-4 py-3 mb-2 mb-md-0">
+                <i class="bi bi-arrow-up-right text-primary me-2 fs-5"></i>
+                <span class="fs-6" style="color:#0B1C59;">Check Availability&nbsp;&nbsp;of Products</span>
             </div>
-        </div>
 
-        <!-- Time Slot Selector -->
-        <div class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
-            <div class="input-group" style="min-width: 200px;">
-                <span class="input-group-text bg-transparent border-0 pe-1">
-                    <i class="bi bi-clock text-secondary"></i>
-                </span>
-                <select class="form-select border-0 px-1 shadow-none fw-medium" style="font-size: 0.9rem;">
-                    <option>Select Time Slot</option>
-                    <option>Morning (9AM-12PM)</option>
-                    <option>Afternoon (1PM-5PM)</option>
-                    <option>Evening (6PM-9PM)</option>
-                </select>
+            <!-- Date Input -->
+            <div
+                class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
+                <div class="input-group" style="min-width: 220px;">
+                    <span class="input-group-text bg-transparent border-0 pe-1">
+                        <i class="bi bi-calendar3 text-secondary"></i>
+                    </span>
+                    <input type="date" class="form-control border-0 px-1 shadow-none fw-medium"
+                        placeholder="Select Booking Date" style="font-size: 0.9rem;">
+                </div>
             </div>
-        </div>
+            <!-- Time Slot Selector -->
+            <div
+                class="border-top border-md-start border-light d-flex align-items-center px-3 py-2 bg-white mb-2 mb-md-0">
+                <div class="input-group" style="min-width: 200px;">
+                    <span class="input-group-text bg-transparent border-0 pe-1">
+                        <i class="bi bi-clock text-secondary"></i>
+                    </span>
+                    <select class="form-select border-0 px-1 shadow-none fw-medium" style="font-size: 0.9rem;">
+                        <option>Select Time Slot</option>
+                        <option>Morning (9AM-12PM)</option>
+                        <option>Afternoon (1PM-5PM)</option>
+                        <option>Evening (6PM-9PM)</option>
+                    </select>
+                </div>
+            </div>
 
-        <!-- Search Button -->
-       <div class="border-top border-md-start border-light d-flex justify-content-center justify-content-md-start align-items-center px-4 py-2 text-white rounded-bottom rounded-md-0 mb-2 mb-md-0"
-    style="background-color: #0b1c59;">
-    
-    <button type="submit"
-        class="btn text-white fw-bold d-flex align-items-center px-3 py-2 border-0 bg-transparent"
-        style="letter-spacing: 0.5px;">
-        <i class="bi bi-search me-2 fs-6"></i>
-        SEARCH
-    </button>
-</div>
+            <!-- Search Button -->
+            <div class="border-top border-md-start border-light d-flex justify-content-center justify-content-md-start align-items-center px-4 py-2 text-white rounded-bottom rounded-md-0 mb-2 mb-md-0"
+                style="background-color: #0b1c59;">
 
-    </form>
-</div>
+                <button type="submit"
+                    class="btn text-white fw-bold d-flex align-items-center px-3 py-2 border-0 bg-transparent"
+                    style="letter-spacing: 0.5px;">
+                    <i class="bi bi-search me-2 fs-6"></i>
+                    SEARCH
+                </button>
+            </div>
+        </form>
+    </div>
 
     <div class="container my-5">
-        <div class="row g-4 align-items-start">
-
-            <!-- LEFT: Coronavirus Update -->
-            <div class="col-lg-8">
-                <h2 class="corona-title">Coronavirus (COVID-19) Update</h2>
-                <h4 class="corona-subtitle mt-3">At JS Party Hire, we take safety very seriously. Actually, it is the
-                    most important thing!</h4>
-                <p class="mt-4">
-                    Due to the awake of the Coronavirus (COVID-19), we have taken further measures to clean the castles
-                    and equipment with soap and antibacterial products (we do this on a normal day too!)
-                </p>
-                <p>
-                    Since the Government's announcement of social distancing, we are no longer promoting parties or the
-                    like in the coming weeks. However, we will still help our valued customers keep their children
-                    entertained during this very stressful time.
-                    Having a bouncy castle for the children of only your home can get them busy for hours during the
-                    day, helping them release their energy and stay healthy.
-                </p>
-                <p>
-                    JS Party Hire will deliver the Bouncy Castle in the safest possible method. Our Delivery driver will
-                    be wearing protective gear and after cleaning the castle thoroughly, we will set it up in your
-                    garden.
-                    We will ask all family members, especially the elderly and children, to go upstairs while the setup
-                    is taking place.
-                </p>
-                <p>
-                    If you have any concerns or would like to discuss the arrangements then please give us a call on <a
-                        href="tel:02085058115">020 8505 8115</a>.
-                    <br />
-                    Can we please direct you to the guidance of the <a href="https://www.nhs.uk">NHS services</a>.
-                </p>
-                <p><strong>JS Party Hire</strong></p>
-            </div>
-        </div>
-
-        <div class="container my-5 text-center">
-            <h2 class="fw-bold text-primary mb-5">Testimonials</h2>
-            <div class="d-flex justify-content-center align-items-start flex-wrap gap-4">
-
-                <!-- Testimonial 1 -->
-                <div class="d-flex align-items-start gap-3">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" class="testimonial-img">
-                    <div class="testimonial-box text-start">
-                        <div class="testimonial-name">Rk From East London</div>
-                        <p class="mb-0 mt-2">hello!<br>We improve our products, based on feedback, until they're the
-                            best.</p>
-                    </div>
-                </div>
-                <div class="divider d-none d-md-block"></div>
-                <div class="d-flex align-items-start gap-3">
-                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User 2" class="testimonial-img">
-                    <div class="testimonial-box text-start">
-                        <div class="testimonial-name">Rk From East London</div>
-                        <p class="mb-0 mt-2">hello!<br>We improve our products, based on feedback, until they're the
-                            best.</p>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="color:#0B1C59 ;">Testimonials</h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="img-box"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                                </div>
+                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu
+                                    sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                    semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius
+                                    nibh non aliquet.</p>
+                                <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                                </div>
+                                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque
+                                    eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra
+                                    sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh,
+                                    facilisis gravida odio.</p>
+                                <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img-box"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                                </div>
+                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id
+                                    lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
+                                    tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa.
+                                    Etiam hendrerit dolor eget rutrum.</p>
+                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <br><br>
+        <div class="row align-items-center justify-content-center g-3 flex-wrap mx-0">
 
-        <div class="container my-5 border rounded px-2 py-4 shadow-sm">
-            <div class="row align-items-center justify-content-center g-3 flex-wrap">
-
-                <!-- Title -->
-                <div class="col-auto">
-                    <h4 class="fw-bold m-0" style="color: #2f57ff;">Sign Up</h4>
-                </div>
-
-                <!-- Input -->
-                <div class="col-md-5 col-sm-8 col-12">
-                    <input type="email" class="form-control" placeholder="Enter your email">
-                </div>
-
-                <!-- Button -->
-                <div class="col-auto">
-                    <button class="btn btn-subscribe px-4" type="button">Subscribe</button>
-                </div>
-
+            <!-- Title -->
+            <div class="col-auto">
+                <h4 class="fw-bold m-0" style="color: #0B1C59;">Sign Up</h4>
             </div>
+
+            <!-- Input -->
+            <div class="col-md-5 col-sm-8 col-12">
+                <input type="email" class="form-control" placeholder="Enter your email"
+                    style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+            </div>
+
+            <!-- Button -->
+            <div class="col-auto">
+                <button class="btn px-4" type="button"
+                    style="background-color: #0B1C59; color: white; padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                    Subscribe
+                </button>
+            </div>
+
         </div>
 
     </div>
@@ -432,6 +430,10 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
